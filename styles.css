@@ -1,0 +1,49 @@
+body {
+    font-family: monospace;
+    background: #111217;
+    color: #e5e7eb;
+    padding: 2rem;
+}
+
+
+h1 {
+    color: #3b82f6;
+}
+
+.connected {
+    color: #10b981;
+}
+
+.disconnected {
+    color: #ef4444;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+}
+
+th, td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #1f2937;
+}
+
+th {
+    color: #6b7280;
+    text-transform: uppercase;
+    font-size: 0.75rem;;
+}
+
+
+.price {
+    font-weight: bold;
+    color: #f59e0b;
+}
+
+
+.time {
+    color: #6b7290;
+    font-size: 0.85rem;
+}

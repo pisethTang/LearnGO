@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=q, initial-scale=1.0">
+    <title>SSE Stock Dashboard</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Real-Time Stock Dashboard</h1>
+    <div id="status" class="disconnected">Disconnected</div>
+    <table>
+        <thead><tr><th>Symbol</th><th>Price</th><th>Updated</th></tr></thead>
+        <tbody id="prices"></tbody>
+    </table>
+    <div id="log"></div>
+    
+
+    <script src="dashboard.js" defer></script>
+</body>
+</html>
