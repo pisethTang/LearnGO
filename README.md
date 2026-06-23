@@ -10,4 +10,7 @@ GO programming!
 
 
 # Reference:
-1. [Server-Send Events Crash Course](https://www.youtube.com/watch?v=4HlNv1qpZFY&list=PLw5h0DiJ-9PAQ1pKeDanXUjGbjPAluT7S)
+1. [Server-Sent Events (SSE): Build a Real-Time Stock Dashboard in Go](https://www.youtube.com/watch?v=_s9LkfybCFQ)
+
+2. [package main tutorial](https://www.youtube.com/watch?v=nvijc5J-JAQ)
+3. [Web Socket](https://www.youtube.com/watch?v=2Nt-ZrNP22A&list=PLQnljOFTspQUGjfGdg8UvL3D_K9ACL6Qh)
