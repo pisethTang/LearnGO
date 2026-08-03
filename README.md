@@ -1,44 +1,61 @@
-# Prerequisites
+### REST
+Representational State Transfer
 
-- Docker containerizations. 
+1. Client-server decoupling (clients could be anything ... server would still respond to them)
+2. Uniform interface: all requests for the same resource should look the same, no matter where the request comes from.
+e.g.,   GET /v1/users/feed
+       HTTP METHOD, RESOURCE, ACTION/RESPONSE
+        GET /v1/posts/:postId/comments/:commentId
+        There is a hierarchy. 
+
+Go HTTP Handlerfunc()
+
+Create     HTTP             POST (PUT)
+Read       ----->           GET
+Update                      PATCH/PUT
+Delete                      DELETE
+
+3. Statelessness 
+
+------------
 
 
-# Kubernetes
-
-From my understanding so far, Kubernetes and Docker are virtualization software and so they share a lot of similarities except for the fact that Kubernetes are usually used in more enterprise-level environments (when dealing with a large volume of continuous stream of data). 
-
-
-## History
-The goal (as it has been this entire time) for tech companies is to deploy their apps to their clients as quickly, efficiently and safely as possible. 
-
-
-Monolith (monorepo -- one codebase) --> microservice (each service can be written in different languages and each can be scaled individually & independently.)
-
-virtualization (taking a slice of major components to run an application) as a means to maximize CPU utilization. 
-
-Cloud computing came into the scene due to many factors. One primary factor is that small companies or startups were thinking of how they can deploy their applications to clients. Large enterprises (like IBM, Oracle, etc) had already been doing that (although quite pricey and expensive.)
-
-
-Cloud providers: AWS, Azure, GCP, Exoscale (for startups).
-
-- Kubernetes (K8s): orchestrator engine to manage containerized applications (but it's actually even more than this -- extensible.). K8s can manage other resources (not just containerized apps, it can manage other K8s)
-- automatic scheduling
-- mix of controllers to run applications. 
+- industry standard for building web services 
+- All about client-server communication 
 
 
 
++ Why? 
+- Standardize -> less decision making 
+- Stateless -> Scalable & easy to modify
+- Cacheability -> performance
 
-# Brief
-DC -> virtualization -> Clouds -> Containers (-> WASM)
+--------------
 
 
 
-# Objectives
-1. Application
-2. Deployment services: ingress
-3. Gateway api (service manager)
-4. All K8 constructs. 
-5. Create clusters (self-managed and Exoscale-managed)
+
+TCP: a "reliable" connection protocol that runs on top of an unreliable (the client may or may not receive the message in order or if it receives at all) protocol: IP (short for Internet Protocol)
+
+
+
+
+Reliable Delivery 
+                                    Acknowledgement (3-way handshake) 
+                        
+Program (server) <> --------------   Computer (client)
+
+E.g. When we go to google and type in a url such as "https://hello.com", the browser (client) will do a DNS lookup to look for the ip address of the server so that when we connect to the server, there's going to be a TCP connection/handshake, then HTTP will take over. Then ther's going to the HTTP responses from the clients back to the server and then you have your rendred webpage.
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -47,13 +64,5 @@ DC -> virtualization -> Clouds -> Containers (-> WASM)
 
 
 # References
-1. [Learn Kubernetes in 6 Hours – Full Course with Real-World Project
-](https://www.youtube.com/watch?v=_4uQI4ihGVU&t=2666s)
-2. [DevOps Directive](https://www.youtube.com/@DevOpsDirective)
-
-
-3. [Tiago's website](https://www.youtube.com/watch?v=CIIrR5daWL4)
-
-
-
-
+1. [12factor](https://12factor.net/) inspired by Martin Fowler
+2. [Roy Fielding's original research](https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm)
