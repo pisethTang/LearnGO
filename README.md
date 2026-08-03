@@ -52,7 +52,7 @@ DC -> virtualization -> Clouds -> Containers (-> WASM)
 2. [DevOps Directive](https://www.youtube.com/@DevOpsDirective)
 
 
-
+3. [Tiago's website](https://www.youtube.com/watch?v=CIIrR5daWL4)
 
 
 
