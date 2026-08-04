@@ -48,6 +48,11 @@ Program (server) <> --------------   Computer (client)
 E.g. When we go to google and type in a url such as "https://hello.com", the browser (client) will do a DNS lookup to look for the ip address of the server so that when we connect to the server, there's going to be a TCP connection/handshake, then HTTP will take over. Then ther's going to the HTTP responses from the clients back to the server and then you have your rendred webpage.
 
 
+# Tools used 
+- Golang migrate
+- 
+
+- Repository pattern: for transaction 
 
 
 
@@ -56,6 +61,17 @@ E.g. When we go to google and type in a url such as "https://hello.com", the bro
 
 
 
+# Clean layered architecture 
+- Separation of concerns: each level in your program should be separate by a clear barrier: transport layer, service layer, storage layer. 
+- Dependency Inversion Principle (DIP): you're injecting deps in your layers. You don't directly call them. Why? it promotes loose coupling and makes it easier to test your programs. 
+- Adaptability to change: by organizing your code in a modular and flexible way, you can more easily introduce new features, refactor existing code, and respond to evolving business requirements. Your system should be easy to change, if you have a lot of existing code to add a new feature, you're doing it wrong. 
+- Focus on business value: focus on delivering value to your users, they are the ones who will be paying your bills at the end of the month. So focus on business value. 
+
+- Transport ----> Service -----> Storage 
+
+- testing: can inject a mock service/layer to easily test any different layers. 
+
+- Interface > struct 
 
 
 
