@@ -1,0 +1,5 @@
+D1. Module: a folder that has a go.mod file in it. go commands work only inside one. You create one with go mod init <name>.
+D2. Package: a folder with 1 or more .go files. Each file's first line is package <name>, and every file in the folder must use the same name.
+D3. main package: a package (D2) whose files say package main. go build turns it into a file you can run, and it must contain func main(), which runs first.
+D5. Which module you're in: Go starts in the folder you're standing in and walks upward (. → .. → ../..) until it finds a go.mod. That go.mod's folder is the module you're in. (Your very first error, "cannot find main module", was this walk failing.)
+D6. Which folders belong to a module: the folder with the go.mod, plus all its subfolders, except a subfolder that has its own go.mod. That subfolder, and everything under it, belongs to the new module instead.
