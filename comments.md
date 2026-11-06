@@ -1,0 +1,2 @@
+# 06-November-2026
+My only criticism of Go that I don't see (most) other resources address is explaining the concepts of a module, a package and the source files in a package <b>so that</b> one can open just about any repositories of Go code or a go snippet and be able to code along or write multiple go files in one directory which I must admit causes a lot of friction for people trying to learn Go including me (or maybe I was just too daft).
