@@ -9,8 +9,6 @@ This readme contains the required set of terminologies and concepts that one sho
 - `Module`: a folder containing one or more packages defined by a `go.mod` file. 
 
 
-
-
 ## go.mod
 - As explained, one **must always** create at least 1 go module in order to write go code. See [here](go_module.md) for why.
 - It can be created by hand or with the command: `go mod init module_name`
@@ -23,3 +21,17 @@ This readme contains the required set of terminologies and concepts that one sho
 - It can be created by hand or with the command: `go work init` 
 - See [example](go.work): `use` lets the `go` command find everything it needs.
 
+
+
+
+### The Go command
+- When I say "Go" or "go" command, I meant `go arg1, arg2, ...` 
+- It is versatile and is used with subcommands such as: 
+    + go run
+    + go build
+    + go mod 
+    + go work
+    + go clean
+    + go test
+    + go <sub_command>
+- For help: go help subcommand
